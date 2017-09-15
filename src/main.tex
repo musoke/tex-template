@@ -1,0 +1,65 @@
+\documentclass[a4paper,draft]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\newcommand{\re}[1]{\textcolor{blue}{[{\bf RE}: #1]}}
+% \newcommand{\nm}[1]{\textcolor{red}{[{\it {\bf NM}: #1}]}}
+
+\setlength{\marginparwidth}{4cm}
+% \paperwidth=\dimexpr \paperwidth + 3cm\relax
+% \oddsidemargin=\dimexpr\oddsidemargin + 0cm\relax
+% \evensidemargin=\dimexpr\evensidemargin + 3cm\relax
+% \marginparwidth=\dimexpr \marginparwidth + 5cm\relax
+\newcommand{\comment}[4][,]{%
+    \todo[
+        backgroundcolor=#4!50,
+        linecolor=#4,
+        #1
+    ]{{\bf #3}: #2}
+}
+
+\newcommand{\nm}[2][,]{%
+    \comment[#1]{#2}{NM}{orange}
+}
+
+\usepackage[]{hyperref}
+\hypersetup{final}
+\makeatletter
+\AtBeginDocument{%
+    \hypersetup{%
+      pdfinfo={%
+        Title={\@title},%
+        Subject={},%
+        Author={},%
+        % Keywords={\@keywords},%
+        },%
+      pdfnumcopies=2%
+    }
+}
+\makeatother
+
+\usepackage[obeyFinal]{todonotes}
+\usepackage[markifdraft,dirty=*]{gitinfo2}
+
+\title{}
+\author{{{ name }}%
+    \thanks{\href{mailto:{{ email }}}{{{ email }}}}%
+            \\ \textit{{{ inst }}}%
+        }
+\date{\today}
+
+\newcommand{\lcdm}{$\Lambda$CDM }
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+\bibliographystyle{JHEP}
+\bibliography{autobib.bib}
+
+\end{document}
