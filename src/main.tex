@@ -6,8 +6,8 @@
 \usepackage{microtype}
 \usepackage[utf8]{inputenc}
 \usepackage{color}
-\newcommand{\re}[1]{\textcolor{blue}{[{\bf RE}: #1]}}
-% \newcommand{\nm}[1]{\textcolor{red}{[{\it {\bf NM}: #1}]}}
+\newcommand{\re}[1]{\textcolor{blue}{[{\bf RE}: #1]} }
+% \newcommand{\nm}[1]{\textcolor{red}{[{\it {\bf NM}: #1}]} }
 
 \setlength{\marginparwidth}{4cm}
 % \paperwidth=\dimexpr \paperwidth + 3cm\relax
@@ -19,7 +19,7 @@
         backgroundcolor=#4!50,
         linecolor=#4,
         #1
-    ]{{\bf #3}: #2}
+    ]{ {\bf #3}: #2}
 }
 
 \newcommand{\nm}[2][,]{%
@@ -45,11 +45,11 @@
 \usepackage[obeyFinal]{todonotes}
 \usepackage[markifdraft,dirty=*]{gitinfo2}
 
-\title{}
-\author{{{ name }}%
-    \thanks{\href{mailto:{{ email }}}{{{ email }}}}%
-            \\ \textit{{{ inst }}}%
+\title{TITLE}
+\author{ {{ name }}%
+    \thanks{\href{mailto: {{ email }} }{ {{ email }} } \newline \textit{ {{ institution }} }%
         }
+    }
 \date{\today}
 
 \newcommand{\lcdm}{$\Lambda$CDM }
