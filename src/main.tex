@@ -26,22 +26,7 @@
     \comment[#1]{#2}{NM}{orange}
 }
 
-\usepackage[]{hyperref}
-\hypersetup{final}
-\makeatletter
-\AtBeginDocument{%
-    \hypersetup{%
-      pdfinfo={%
-        Title={\@title},%
-        Subject={},%
-        Author={},%
-        % Keywords={\@keywords},%
-        },%
-      pdfnumcopies=2%
-    }
-}
-\makeatother
-
+\usepackage{hyperref}
 \usepackage[obeyFinal]{todonotes}
 \usepackage[markifdraft,dirty=*]{gitinfo2}
 
@@ -64,6 +49,10 @@
 \date{\today}
 
 \newcommand{\lcdm}{$\Lambda$CDM }
+
+% Usually should load hyperref last
+\usepackage[bookmarks]{hyperref}
+\hypersetup{final}
 
 \begin{document}
 \maketitle
