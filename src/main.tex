@@ -16,7 +16,7 @@
 % \oddsidemargin=\dimexpr\oddsidemargin + 0cm\relax
 % \evensidemargin=\dimexpr\evensidemargin + 3cm\relax
 % \marginparwidth=\dimexpr \marginparwidth + 5cm\relax
-\newcommand{\comment}[4][,]{%
+\newcommand{\mycomment}[4][,]{%
     \todo[
         backgroundcolor=#4!50,
         linecolor=#4,
@@ -25,7 +25,7 @@
 }
 
 \newcommand{\nm}[2][,]{%
-    \comment[#1]{#2}{NM}{orange}
+    \mycomment[#1]{#2}{NM}{orange}
 }
 
 \usepackage{hyperref}
