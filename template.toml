@@ -1,9 +1,12 @@
 [files]
-directories = ["src", "src/img", "bin"]
+directories = ["src", "src/tex", "src/img", "bin"]
 templates = [
                 ".gitignore",
                 "bin/gitinfo-hook", "bin/create-hook-symlinks.sh",
-                "src/autobib.bib", "src/JHEP.bst", "src/main.tex",
+                "src/autobib.bib", "src/JHEP.bst",
+                "src/mystyle.sty",
+                "src/main.tex",
+                "src/tex/intro.tex",
                 ]
 
 [config]
