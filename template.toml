@@ -6,6 +6,7 @@ templates = [
                 "src/autobib.bib", "src/JHEP.bst",
                 "src/mystyle.sty",
                 "src/main.tex",
+                "src/macros.sty",
                 "src/tex/intro.tex",
                 ]
 
